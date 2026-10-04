@@ -1,0 +1,11 @@
+[products]
+Машинка;100;іграшка
+Lego;250;конструктор
+
+[customers]
+Міша;misha@mail.com
+Оля;olya@mail.com
+
+[stock]
+Машинка;10
+Lego;5
