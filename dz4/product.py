@@ -68,17 +68,3 @@ class Shop:
                 elif section == "stock":
                     name, quantity = line.split(";")
                     self.warehouse.change_quantity(self.products[name], int(quantity))
-
-car = Product("Машинка", 100, "іграшка")
-lego = Product("Lego", 250, "конструктор")
-
-order = Order()
-order.add_item(car, 2)
-order.add_item(lego, 1)
-print(order.get_total())
-
-shop = Shop()
-shop.from_file("warehouse.txt")
-
-print(len(shop.customers))                                        #
-print(shop.warehouse.get_quantity(shop.products["Lego"]))
