@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta charset="UTF-8">
+    <title>Останні роки та спадщина</title>
+</head>
+<body>
+    <h1>
+        Останні роки та спадщина
+    </h1>
+    <p>
+        Протягом життя Едісон працював над багатьма винаходами й отримав численні патенти. Серед напрямів,
+        якими він займався, були звукозапис, електричне освітлення, батареї та рухомі зображення.
+        Його робота часто спиралася на експерименти й командну працю.
+    </p>
+    <p>
+        У 1887 році Едісон переніс свою лабораторію до Вест-Оранжа, також у штаті Нью-Джерсі.
+        Там він продовжував працювати над новими ідеями та вдосконалювати попередні винаходи.
+    </p>
+    <p>
+        Томас Алва Едісон помер 18 жовтня 1931 року. Його пам’ятають як одного з найвідоміших американських винахідників.
+        Його історія показує, як цікавість,
+        наполеглива праця та співпраця з іншими людьми можуть допомагати створювати речі, що змінюють повсякденне життя.
+    </p>
+
+    <nav aria-label="Навігація сторінками">
+      <ul class="pagination pagination-lg">
+        <li class="page-item">
+          <a class="page-link" href="{{ url_for('index') }}" aria-current="page">1</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="{{ url_for('childhood') }}">2</a>
+        </li>
+        <li class="page-item active">
+          <a class="page-link" href="{{ url_for('inventions') }}">3</a>
+        </li>
+      </ul>
+    </nav>
+</body>
+</html>

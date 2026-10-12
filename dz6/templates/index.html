@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta charset="UTF-8">
+    <title>Томас Алва Едісон</title>
+</head>
+<body>
+    <h1>
+        Дитинство та юність
+    </h1>
+    <p>
+          Томас Алва Едісон народився 11 лютого 1847 року в місті Мілан, штат Огайо, США. Коли він був маленьким,
+        його родина переїхала до міста Порт-Гурон у штаті Мічиган.
+        Едісон недовго ходив до школи: учителі вважали його неуважним,
+        тому значну частину знань він здобував удома за допомогою матері.
+    </p>
+    <img src="{{ url_for('static', filename='Young_Thomas_Edison.jpg') }}" alt="Томас Алва Едісон" class="photo">
+    <p>
+        Ще в дитинстві Томас цікавився наукою та технікою.
+        Він багато читав і проводив прості досліди.
+        У підлітковому віці продавав газети й солодощі в потягах,
+        що допомагало йому заробляти гроші та купувати матеріали для експериментів
+    </p>
+    <p>
+        Пізніше Едісон працював телеграфістом. Робота з телеграфом дала йому практичні знання про електрику та зв’язок.
+        У 1869 році він переїхав до Нью-Йорка й почав працювати над власними винаходами.
+    </p>
+    <nav aria-label="Навігація сторінками">
+      <ul class="pagination pagination-lg">
+        <li class="page-item active">
+          <a class="page-link" href="{{ url_for('index') }}" aria-current="page">1</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="{{ url_for('childhood') }}">2</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="{{ url_for('inventions') }}">3</a>
+        </li>
+      </ul>
+    </nav>
+</body>
+</html>

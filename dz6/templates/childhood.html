@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta charset="UTF-8">
+    <title>Винаходи та лабораторія</title>
+</head>
+<body>
+    <h1>
+        Винаходи та лабораторія
+    </h1>
+    <p>
+        Едісон був не лише винахідником, а й підприємцем. У 1876 році він відкрив лабораторію в Менло-Парку,
+        штат Нью-Джерсі. Там він працював разом із помічниками: вони створювали прототипи,
+        випробовували матеріали й удосконалювали пристрої.
+    </p>
+    <img src="{{ url_for('static', filename='fonograf-ezhisona.jpg') }}" alt="Перший в світі фонограф" class="photo">
+    <p>
+        Одним із найвідоміших винаходів Едісона став фонограф — пристрій, який міг записувати й відтворювати звук.
+        Коли Едісон представив його публіці, люди були здивовані, що машина може відтворити людський голос.
+    </p>
+    <img src="{{ url_for('static', filename='10306_1.jpg') }}" alt="Перша в світі лампочка" class="photo">
+    <p>
+        Також Едісон працював над електричним освітленням. Він не був першою людиною, яка створила лампу розжарювання,
+        але його команда розробила практичнішу лампу та систему,
+        яка давала змогу використовувати електричне освітлення в будинках і на вулицях.
+        Для цього потрібно було створити не лише лампу, а й генератори, проводи та інші частини системи.
+    </p>
+    <nav aria-label="Навігація сторінками">
+      <ul class="pagination pagination-lg">
+        <li class="page-item">
+          <a class="page-link" href="{{ url_for('index') }}" aria-current="page">1</a>
+        </li>
+        <li class="page-item active">
+          <a class="page-link" href="{{ url_for('childhood') }}">2</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="{{ url_for('inventions') }}">3</a>
+        </li>
+      </ul>
+    </nav>
+</body>
+</html>
